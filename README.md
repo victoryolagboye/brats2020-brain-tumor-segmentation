@@ -79,9 +79,6 @@ A possible explanation for the LGG result is the training set's imbalance toward
 - Small model with about one hour of training, no ensembling and no test-time augmentation, so scores are below published BraTS challenge winners. I have not compared against published results under identical conditions.
 - Results are on BraTS2020 only; generalisation to other scanners, populations and protocols is untested.
 
-## Notes on reading the images
-
-*[Add your own notes here, in your own words: where the model agrees with the expert, where it fails, and what you notice about the tumor appearance on each sequence. Be clear about your level of experience, for example whether you have covered MRI interpretation yet.]*
 
 ## Next steps
 
@@ -93,7 +90,7 @@ A possible explanation for the LGG result is the training set's imbalance toward
 
 The notebook was run on Kaggle (GPU T4 x2) with the BraTS2020 dataset attached as an input.
 
-1. Open `[NOTEBOOK-FILE-NAME].ipynb` in a Kaggle notebook and attach the dataset.
+1. Open `3d-brain-tumor-segmentation-on-brats2020-monai-3 (1).ipynb` in a Kaggle notebook and attach the dataset.
 2. Check that the `path` variable matches where Kaggle mounts the data.
 3. Run the cells in order. Training takes roughly an hour.
 4. One patient (`BraTS20_Training_355`) has its mask named `W39_1998.09.19_Segm.nii`; the notebook includes a patch that handles this.
@@ -104,7 +101,7 @@ Libraries: PyTorch, MONAI, nibabel, pandas, NumPy, scikit-learn, matplotlib. See
 
 | File | Description |
 |---|---|
-| `[NOTEBOOK-FILE-NAME].ipynb` | Full pipeline with outputs |
+| `3d-brain-tumor-segmentation-on-brats2020-monai-3 (1).ipynb` | Full pipeline with outputs |
 | `test_results.csv` | Per-patient test Dice (WT, TC, ET) and tumor grade |
 | `predictions.png` | Best / median / worst test cases |
 | `curves.png` | Learning curves (stage 2) |
@@ -117,4 +114,4 @@ Libraries: PyTorch, MONAI, nibabel, pandas, NumPy, scikit-learn, matplotlib. See
 
 ## Author
 
-**[YOUR NAME]** · [LinkedIn] · [Kaggle notebook link]
+**Victory Olagboye** · www.linkedin.com/in/victory-olagboye-6892133a9 · https://www.kaggle.com/code/victoryolagboye/3d-brain-tumor-segmentation-on-brats2020-monai-3
